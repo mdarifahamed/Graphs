@@ -29,10 +29,10 @@ public class BipartieG {
         graph[2].add(new Edge(2, 4));
 
         graph[3].add(new Edge(3, 1));
-        graph[3].add(new Edge(3, 4));
+        // graph[3].add(new Edge(3, 4));
 
         graph[4].add(new Edge(4, 2));
-        graph[4].add(new Edge(4, 3));
+        // graph[4].add(new Edge(4, 3));
     }
 
     public static boolean isBipartite(ArrayList<Edge> [] graph) {
@@ -67,8 +67,10 @@ public class BipartieG {
         return true;
     }
 
-    
+    // TC :- O(V+E)
     public static void main(String[] args) {
+        // If graph doesn't have cycle -> BIPARTITE
+
         int V = 5;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
