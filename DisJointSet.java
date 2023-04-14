@@ -15,7 +15,7 @@ public class DisJointSet {
         if(x == par[x]) {
             return x;
         }
-        return find(par[x]);
+        return  par[x] = find(par[x]);
     }
 
     // union
